@@ -1,0 +1,129 @@
+<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #021826;
+}
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #style{
+        display: block;
+        margin-left: auto;
+        width:200px;
+        height: 50px;
+        margin-right: auto;
+        outline:none;
+    }
+
+    .div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 1px 5px 50px black;
+        margin-top: 15%;
+        border-radius: 5%;
+        width: 300px;
+        height: 250px;
+    }
+    h1{
+        color: black;
+        position: absolute; 
+        font: normal 16pt arial;
+        top: 40%;   
+        
+    }
+    .head {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ed145b;
+    z-index: 1;   
+}
+
+.link1 {
+    transition: all .5s ease;
+    margin-top: 8px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+.uling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    display: inline-flex;
+    color: #616d72;
+    margin-top: 8px;
+    font: 14pt Gotham HTF Medium;
+    text-transform: uppercase;
+}
+
+
+.link:hover {
+    color: #ed145b;
+    border-bottom: 2px solid #ed145b;
+}
+
+.link:hover {
+    transition: all .3s linear;
+    font: 17pt Gotham HTF large;
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    margin-top: 15px;
+    right: 76%;
+}
+
+</style>
+<body>
+    <header class="head">
+        
+        <img src="./IMAGENS/logo-principal.png" class="box-image">
+        <nav   class="box-cont" >
+            <ul class="uling">
+                <a href="./index.html" class="link1"><li class="link">Home</li></a>
+                <a href="./index.html#Como" class="link1"><li class="link">Sobre</li></a>
+                <a href="./index.html#Materiais" class="link1"><li class="link">Empregos</li></a>
+                <a href="./index.html#desenvolvida" class="link1"><li class="link">Desenvolvimento</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+        <input type="hidden" name="currency" value="BRL" />
+        <input type="hidden" name="receiverEmail" value="clon.games.xd@gmail.com" />
+        <input type="hidden" name="iot" value="button" />
+        <main> 
+        <div class="div">
+            <h1>Doe com <strong>pagseguro</strong></h1>
+        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-preto-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" id="style" />
+       </div>
+    </main>
+    </form>
+</body>
+</html>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->

@@ -1,0 +1,156 @@
+<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #021826;
+}
+.head {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ed145b;
+    z-index: 1;   
+}
+
+.link1 {
+    transition: all .5s ease;
+    margin-top: 8px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+.uling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    display: inline-flex;
+    color: #616d72;
+    margin-top: 8px;
+    font: 14pt Gotham HTF Medium;
+    text-transform: uppercase;
+}
+
+
+.link:hover {
+    color: #ed145b;
+    border-bottom: 2px solid #ed145b;
+}
+
+.link:hover {
+    transition: all .3s linear;
+    font: 17pt Gotham HTF large;
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    margin-top: 15px;
+    right: 76%;
+}
+
+.cont-conteudo {
+    margin-top:5%;
+    columns: 50px 2;
+    padding-left: 215px;
+    padding-right: 215px;
+    color: #616d72;
+    margin-bottom: 0%;
+}
+.conte{
+    font: 25pt Gotham HTF Medium;
+    color: #91a3ad;
+    padding-top: 7%;
+    margin-left: 16%;
+}
+p{
+    font: 12pt Gotham HTF Medium;
+    color: #91a3ad;
+    margin-left: 16%;
+    
+}
+button{
+    text-align: center;
+    margin-left: 40%; 
+    margin-top: 2%; 
+    width: 400px;
+    height: 50px;
+    font:normal 12pt arial;
+    background-color: #ed145b;
+    outline: none;
+    border:none;
+    border-radius: 5%;    
+}
+#mensagem{
+    color: white;
+    font: normal 12pt arial;
+    margin-left: 47%; 
+    margin-top: 1%;
+}
+</style>
+<body>
+    <header class="head">
+        <img src="./IMAGENS/logo-principal.png" class="box-image">
+        <nav   class="box-cont" >
+            <ul class="uling">
+                <a href="./index.html" class="link1"><li class="link">Home</li></a>
+                <a href="./index.html#Como" class="link1"><li class="link">Sobre</li></a>
+                <a href="./index.html#Materiais" class="link1"><li class="link">Empregos</li></a>
+                <a href="./index.html#desenvolvida" class="link1"><li class="link">Desenvolvimento</li></a>
+            </ul>
+        </nav>
+    </header>
+
+<div class="text-oqe">
+    <p class="conte" id="Como">
+        Área e especialização profissional: Informática, TI, Telecomunicações - TI
+    </p>    
+    <p class="cont-conteudo" >
+<p>Nível hierárquico: Estagiário</p>
+    <p>Local de trabalho: Vitória, ES</p>
+        <p>Oportunidade de Estágio em Desenvolvimento Web</p>
+            <p>Descrição da Empresa:</p>
+                <p>Empresa de desenvolvimento de e-commerce e marketplaces para o mercado varejista.</p>
+                    <p>Nível Escolar: Superior ou Técnico - Áreas de Tecnologia</p>
+                        <p>Período ou semestre do curso: Sem restrições.</p>
+                            <p>Estudantes do turno: Sem restrições.</p>
+                                <p>Horário do Estágio: 6 horas, período à combinar.</p>
+                                    <p>Dias do Estágio: Segunda à Sexta.</p>
+                                        <p>Pré-requisitos:</p>
+                                            <p>Conhecimentos em HTML, CSS, JavaScript, PHP e MySQL</p>
+                                                <p>Principais atividades a serem exercidas no estágio:</p>
+                                                    <p>Atuar no desenvolvimento de novas funcionalidades, manutenções, melhorias e integrações em nossa plataforma Web.</p>
+                                                        <p>Local do Estágio: Centro de Vitória.</p>
+                                                            <p>Valor da bolsa auxílio: 600,00.</p>
+                                                                <p>Benefícios: Vale transporte e Seguro de Vida obrigatório.</p>
+                                                                    <p>Os interessados devem enviar o currículo por e-mail.</p>
+    </p>
+</div>
+<button onclick="start()">Enviar CV (CV PEDIDO VIA E-MAIL FIQUE ATENTO)</button>
+<div id="mensagem"></div>
+</body>
+<script>
+    function start(){
+        var resultado = document.getElementById("mensagem");
+        resultado.innerHTML = `Verfique o seu E-mail e aguarde`
+    }
+</script>
+</html>
+
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
